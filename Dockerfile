@@ -7,7 +7,7 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends \
        ca-certificates cmake g++ make \
        libdrogon-dev libjsoncpp-dev libcurl4-openssl-dev libpq-dev \
-       uuid-dev zlib1g-dev libssl-dev libsqlite3-dev \
+       uuid-dev zlib1g-dev libssl-dev libsqlite3-dev default-libmysqlclient-dev \
     && rm -rf /var/lib/apt/lists/*
 
 COPY . .
