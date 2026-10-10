@@ -5,7 +5,7 @@ WORKDIR /app
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-       ca-certificates cmake g++ libdrogon-dev libcurl4-openssl-dev libpq-dev \
+       ca-certificates cmake g++ make libdrogon-dev libcurl4-openssl-dev libpq-dev \
     && rm -rf /var/lib/apt/lists/*
 
 COPY . .
