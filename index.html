@@ -71,6 +71,81 @@
             color: white;
             text-align: center;
         }
+        /* LOKESHMART professional design */
+body {
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+header {
+    background: linear-gradient(135deg, #102542, #1b998b);
+    padding: 30px 20px;
+    box-shadow: 0 4px 14px #00000018;
+}
+
+header h1 {
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 3px 10px #00000012;
+}
+
+.hero {
+    border-radius: 16px;
+    box-shadow: 0 5px 22px #10254210;
+    padding: 45px 20px;
+}
+
+.products {
+    gap: 24px;
+    padding: 0 20px;
+}
+
+.product {
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 24px 18px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px #10254218;
+}
+
+button {
+    background: #1b998b;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #14796f;
+}
+
+footer {
+    background: #102542;
+    line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        margin: 0 6px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
     </style>
 </head>
 <body>
